@@ -5,9 +5,9 @@ spring:
 
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:ms-cartdb
-    username: root
-    password: '7781'
+    url: jdbc:h2:mem:ms-cart;DB_CLOSE_DELAY=-1
+    username: sa
+    password: ''
   
   h2:
     console:
