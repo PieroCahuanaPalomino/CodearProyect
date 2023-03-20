@@ -15,8 +15,6 @@ spring:
       path: /h2-console
 
   jpa:
-    database-platform: org.hibernate.dialect.MySQL8Dialect
-    defer-datasource-initialization: true
     hibernate:
       ddl-auto: create
     properties:
