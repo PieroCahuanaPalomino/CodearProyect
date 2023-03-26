@@ -2,17 +2,12 @@ server:
   port: ${PORT:0}
 
 spring:
-      
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:ms-cart
-    username: sa
-    password: ''
+  datasource-class-name: org.postgresql.Driver    
   
   h2:
-    console:
+    consola:
       enabled: false
-      path: /h2-console
+      path: /h2-console	
   
   jpa:
     hibernate:
