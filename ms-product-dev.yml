@@ -5,7 +5,7 @@ spring:
   datasource-class-name: org.postgresql.Driver    
   
   h2:
-    consola:
+    console:
       enabled: false
       path: /h2-console	
   
