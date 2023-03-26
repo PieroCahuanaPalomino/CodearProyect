@@ -28,22 +28,6 @@ spring:
       mode: always
       platform: sql
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
-
-eureka:
-  client:
-    enabled: true
-
-  instance:
-    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
 configuration:
     texto: Configurando entorno Desarrollo ...
     autor:
