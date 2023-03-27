@@ -1,14 +1,11 @@
 server:
   port: ${PORT:0}
-
 spring:
   datasource-class-name: org.postgresql.Driver    
-  
   h2:
     console:
       enabled: false
       path: /h2-console	
-  
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -19,7 +16,6 @@ spring:
         '[format_sql]': false
         '[event.merge.entity_copy_observer]': allow
     show-sql: true
-
 management:
   endpoints:
     web:
@@ -28,10 +24,8 @@ management:
   endpoint:
     health:
       show-details: always
-
 eureka:
   client:
     enabled: true
-
   instance:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
